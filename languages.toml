@@ -1,0 +1,30 @@
+[language-server.rust-analyzer]
+command = "rust-analyzer"
+
+[[language]]
+name = "rust"
+auto-format = true
+file-types = ["rs"]
+
+[[language]]
+name = "html"
+auto-format = true
+file-types = ["html", "tera", "hbs"]
+formatter = { command = 'prettier', args = ["--parser", "html"] }
+
+[[language]]
+name = "toml"
+auto-format = true
+file-types = ["toml"]
+
+[[language]]
+name = "javascript"
+auto-format = true
+file-types = ["js"]
+formatter = { command = 'prettier', args = ["--parser", "typescript"] }
+
+[[typescript]]
+name = "typescript"
+auto-format = true
+file-types = ["ts"]
+formatter = { command = 'prettier', args = ["--parser", "typescript"]}
